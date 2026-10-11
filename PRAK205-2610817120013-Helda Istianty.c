@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float A, B, alas, tinggi, keliling, luas;
+
+    // Input nilai A dan B
+    scanf("%f", &A);
+    scanf("%f", &B);
+
+    // Proses perhitungan Pythagoras
+    alas = sqrt((B * B) - (A * A));
+    tinggi = A;
+    keliling = alas + tinggi + B;
+    luas = 0.5 * alas * tinggi;
+
+    // Output dengan format bilangan bulat (%.0f) sesuai test case
+    printf("Alas = %.0f cm\n", alas);
+    printf("Tinggi = %.0f cm\n", tinggi);
+    printf("Keliling = %.0f cm\n", keliling);
+    printf("Luas = %.0f cm^2\n", luas);
+
+    return 0;
+}
